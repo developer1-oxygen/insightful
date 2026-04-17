@@ -1182,6 +1182,10 @@
       padding: 54px 0 56px;
     }
 
+    .footer .container {
+      max-width: 1220px;
+    }
+
     .footer-top {
       display: flex;
       align-items: center;
@@ -1206,7 +1210,7 @@
     }
 
     .footer-top-nav a {
-      color: #3f4860;
+      color: #586177;
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
@@ -1261,7 +1265,7 @@
     .footer-col a {
       display: block;
       text-decoration: none;
-      color: #3f4860;
+      color: #5f687d;
       font-size: 12px;
       margin-bottom: 10px;
       line-height: 1.4;
@@ -1306,7 +1310,7 @@
     .footer-policy-links {
       display: flex;
       align-items: flex-start;
-      gap: 22px;
+      gap: 18px;
       flex-wrap: wrap;
       justify-content: flex-end;
       max-width: 560px;
@@ -1314,7 +1318,7 @@
 
     .footer-policy-links a {
       text-decoration: none;
-      color: #3f4860;
+      color: #5f687d;
       font-size: 12px;
       font-weight: 500;
       white-space: nowrap;
