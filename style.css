@@ -122,6 +122,12 @@
       white-space: nowrap;
     }
 
+    .logo-image {
+      height: 30px;
+      width: auto;
+      display: block;
+    }
+
     .logo-icon {
       display: flex;
       align-items: flex-end;
@@ -1271,6 +1277,20 @@
       line-height: 1.4;
     }
 
+
+    .footer-col h4 { font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom: 20px; }
+
+    .footer-col a {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      font-size: 12px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+
+    .footer-col a { display: block; text-decoration: none; color: var(--text-muted); font-size: 14px; margin-bottom: 12px; }
     .footer-col a:hover { color: var(--purple); }
 
     .footer-legal {
