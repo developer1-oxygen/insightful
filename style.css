@@ -93,6 +93,11 @@
       color: var(--text-dark);
     }
 
+    .navbar:not(.scrolled) .nav-links a:hover,
+    .navbar:not(.scrolled) .nav-actions .btn-ghost:hover {
+      color: var(--purple);
+    }
+
     .navbar:not(.scrolled) .btn-purple {
       background: var(--purple);
       color: #fff;
@@ -163,6 +168,28 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--teal));
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
     }
 
     .nav-links a svg { opacity: 0.6; }
@@ -172,6 +199,26 @@
       align-items: center;
       gap: 12px;
       margin-left: auto;
+    }
+
+    .navbar .nav-actions .btn-ghost {
+      position: relative;
+    }
+
+    .navbar .nav-actions .btn-ghost::after {
+      content: "";
+      position: absolute;
+      left: 24px;
+      bottom: 8px;
+      width: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--teal));
+      transition: width 0.25s ease;
+    }
+
+    .navbar .nav-actions .btn-ghost:hover::after {
+      width: calc(100% - 48px);
     }
 
     .btn {
@@ -1197,9 +1244,8 @@
       align-items: center;
       justify-content: space-between;
       gap: 28px;
-      border-bottom: 1px solid #eef0f8;
       padding-bottom: 26px;
-      margin-bottom: 38px;
+      margin-bottom: 22px;
     }
 
     .footer-logo img {
@@ -1245,6 +1291,12 @@
       font-size: 13px;
       font-weight: 700;
       line-height: 1;
+    }
+
+    .footer-social a span {
+      font-size: 11px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
     }
 
     .footer-social a:hover {
@@ -1294,8 +1346,7 @@
     .footer-col a:hover { color: var(--purple); }
 
     .footer-legal {
-      margin-top: 28px;
-      border-top: 1px solid #eef0f8;
+      margin-top: 0;
     }
 
     .footer-legal-top {
@@ -1303,7 +1354,7 @@
       align-items: flex-start;
       justify-content: space-between;
       gap: 32px;
-      padding: 20px 0 18px;
+      padding: 0 0 18px;
       border-bottom: 1px solid #eef0f8;
     }
 
@@ -1370,17 +1421,7 @@
     .footer-copy-wrap p {
       color: #5d6578;
       font-size: 12px;
-      margin-bottom: 2px;
-    }
-
-    .footer-copy-wrap a {
-      color: #3f4860;
-      font-size: 12px;
-      text-decoration: none;
-    }
-
-    .footer-copy-wrap a:hover {
-      color: var(--purple);
+      margin-bottom: 0;
     }
 
     /* ───── RESPONSIVE ───── */
